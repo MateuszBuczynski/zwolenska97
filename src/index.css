@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+/* Komponenty (bez @apply własnych klas) */
+@layer components {
+  .container { @apply max-w-6xl mx-auto px-6; }
+  .section   { @apply py-16 md:py-20; }
+  .card      { @apply rounded-xl border bg-white shadow-sm; }
+  .badge     { @apply inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600; }
+
+  .btn        { @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium; }
+  .btn-primary{ @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium bg-slate-900 text-white hover:opacity-90; }
+  .btn-outline{ @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium border hover:bg-slate-50; }
+}

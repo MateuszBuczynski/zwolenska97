@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Komponenty (bez @apply własnych klas) */
 @layer components {
   .container { @apply max-w-6xl mx-auto px-6; }
   .section   { @apply py-16 md:py-20; }
@@ -10,4 +9,9 @@
   .btn        { @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium; }
   .btn-primary{ @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium bg-slate-900 text-white hover:opacity-90; }
   .btn-outline{ @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium border hover:bg-slate-50; }
+}
+
+@layer utilities {
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
 }

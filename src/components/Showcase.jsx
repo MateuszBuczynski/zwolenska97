@@ -48,10 +48,31 @@ export default function Showcase() {
             <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
               Powierzchnie magazynowo-biurowe do wynajęcia
             </h1>
-            <p className="mt-4 text-slate-600">
-              Moduły od 100 m² do 3000 m². Dostęp TIR, place manewrowe, parking. Dwa budynki — możliwość wynajmu części.
-            </p>
-            <div className="mt-6 flex gap-3">
+
+{/* Linia 1 — liczby */}
+<p className="mt-4 text-slate-800 font-medium">
+  Działka 1&nbsp;362&nbsp;m²
+  <span className="mx-2 text-slate-400">·</span>
+  Budynek 407,5&nbsp;m²
+  <span className="mx-2 text-slate-400">·</span>
+  3&nbsp;kondygnacje
+  <span className="mx-2 text-slate-400">·</span>
+  Dostęp od zaraz
+</p>
+
+{/* Linia 2 — instalacje */}
+<p className="mt-1 text-slate-600">
+  Ogrzewanie gazowe (kotłownia kondensacyjna)
+  <span className="mx-2 text-slate-300">·</span>
+  wentylacja mechaniczna
+  <span className="mx-2 text-slate-300">·</span>
+  klimatyzacja
+  <span className="mx-2 text-slate-300">·</span>
+  monitoring zewnętrzny
+</p>
+
+<div className="mt-6 flex gap-3">
+
               <a className="btn-primary" href="tel:+48123456789">Zadzwoń</a>
               <a className="btn-outline" href="#contact">Zapytaj o dostępność</a>
             </div>

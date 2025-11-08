@@ -1,6 +1,10 @@
 {
   "redirects": [
-    { "source": "https://www.zwolenska97.pl/:path*", "destination": "https://zwolenska97.pl/:path*", "permanent": true },
-    { "source": "https://zwolenska97.vercel.app/:path*", "destination": "https://zwolenska97.pl/:path*", "permanent": true }
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.zwolenska97.pl" }],
+      "destination": "https://zwolenska97.pl/:path*",
+      "permanent": true
+    }
   ]
 }

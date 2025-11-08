@@ -7,7 +7,7 @@ export default function Showcase() {
   const [idx, setIdx] = useState(0);
   const railRef = useRef(null);
 
-  const hero = photos[0];
+  const hero = photos.find(p => p.base === "DSC_6917") ?? photos[0];
   const thumbs = photos;
 
   const scrollBy = (dir) => {
@@ -44,7 +44,20 @@ export default function Showcase() {
           </div>
 
           <div className="order-2 md:order-1">
-            <span className="badge">Zwoleńska — strefa magazynowa</span>
+            <span className="badge">Zwoleńska 97 — strefa magazynowa</span>
+
+{/* Adres obiektu */}
+<p className="mt-2 text-slate-600 flex items-center gap-2">
+  {/* mała ikonka pinezki */}
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M12 22s7-4.35 7-10a7 7 0 1 0-14 0c0 5.65 7 10 7 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="12" cy="12" r="2.5" stroke="currentColor" strokeWidth="2"/>
+  </svg>
+  <span>Warszawa, Zwoleńska 97, 04-761</span>
+  <a href="#contact" className="underline text-slate-500 hover:text-slate-700">(pokaż na mapie)</a>
+</p>
+
+
             <h1 className="mt-3 text-4xl md:text-5xl font-bold leading-tight">
               Powierzchnie magazynowo-biurowe do wynajęcia
             </h1>

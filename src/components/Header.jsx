@@ -10,13 +10,6 @@ export default function Header() {
           </span>
         </div>
 
-        {/* (opcjonalnie) linki na desktopie */}
-        <nav className="hidden sm:flex items-center gap-6 mr-3 text-slate-600">
-          <a href="#oferta" className="hover:text-slate-900">Oferta</a>
-          <a href="#atuty" className="hover:text-slate-900">Atuty</a>
-          <a href="#contact" className="hover:text-slate-900">Kontakt</a>
-        </nav>
-
         {/* PRAWA STRONA: przycisk "Zadzwoń" – element flex, nie absolute */}
         <a
           href="tel:+48690104850"

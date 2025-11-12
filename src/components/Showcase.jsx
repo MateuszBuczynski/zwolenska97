@@ -94,7 +94,7 @@ export default function Showcase() {
             {/* Na bardzo wąskich ekranach 1 kolumna, od 360px dwie */}
             <ul className="mt-3 grid grid-cols-1 min-[360px]:grid-cols-2 gap-2 text-sm text-slate-600">
               <li>• Lokalizacja z szybkim zjazdem</li>
-              <li>• Wysokość do 6–8 m*</li>
+              <li>• Wysokość magazynu 4.5 m.</li>
               <li>• Ogrzewanie, monitoring</li>
               <li>• Parking na miejscu</li>
             </ul>
